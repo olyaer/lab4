@@ -1,0 +1,13 @@
+a = input(«Введи текст: «)
+ch = input(«Введи символ: «)
+
+positions = []
+
+for i in range(len(a)):
+    if a[i] == ch:
+        positions.append(i)
+
+if len(positions) == 1:
+    print(positions[0])
+elif len(positions) >= 2:
+    print(positions[0], positions[-1])
