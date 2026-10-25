@@ -1,0 +1,3 @@
+a=input("Число:")
+
+print(a+a)
