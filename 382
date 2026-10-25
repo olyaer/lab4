@@ -1,0 +1,11 @@
+a=int(input("Число 1:"))
+b=int(input("Число 2:"))
+c=int(input("Число 3:"))
+d=int(input("Число 4:"))
+
+header = [''] + [str(j) for j in range(c, d + 1)]
+print('\t'.join(header))
+
+for i in range(a, b + 1):
+    row = [str(i)] + [str(i*j) for j in range(c,d + 1)]
+    print('\t'.join(row))
